@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Осталось учебных дней до конца 9 класса</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+        }
+        .widget {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        #countdown {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .label {
+            font-weight: normal;
+            color: #6c757d;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .footer {
+            font-size: 0.8em;
+            color: #adb5bd;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="widget">
+        <h1>Осталось учебных дней до конца 9 класса</h1>
+        <div id="countdown"></div>
+        <p>
+            Окончание 9 класса - <strong style="color: #dc3545;">26 мая 2028 года</strong>.
+            <span class="label">Учитываются только будние дни (Пн-Пт).</span>
+        </p>
+        <div class="footer">
+            Этот виджет будет обновляться автоматически.
+        </div>
+    </div>
+
+    <script>
+        const endDate = new Date('2028-05-26T00:00:00'); // Конец 9 класса
+
+        function getWeekDay(date) {
+            // 0 = Воскресенье, 1 = Понедельник, ..., 6 = Суббота
+            return date.getDay();
+        }
+
+        function isWeekend(date) {
+            const dayOfWeek = getWeekDay(date);
+            return dayOfWeek === 0 || dayOfWeek === 6; // Воскресенье или Суббота
+        }
+
+        function updateCountdown() {
+            const now = new Date();
+            const differenceMs = endDate.getTime() - now.getTime();
+
+            // Проверяем, не прошла ли дата
+            if (differenceMs <= 0) {
+                document.getElementById('countdown').innerHTML = "Поздравляем! 9 класс окончен!";
+                return;
+            }
+
+            let remainingDays = 0;
+            let currentDate = new Date(now); // Копируем текущую дату, чтобы не изменять оригинал
+
+            // Идем по дням от текущей даты до конечной
+            while (currentDate.getTime() < endDate.getTime()) {
+                // Проверяем, является ли текущий день учебным (не выходным)
+                if (!isWeekend(currentDate)) {
+                    remainingDays++;
+                }
+                // Переходим к следующему дню
+                currentDate.setDate(currentDate.getDate() + 1);
+            }
+
+            // Отображаем результат
+            document.getElementById('countdown').innerHTML = `${remainingDays} <span class="label">учебных дней</span>`;
+        }
+
+        // Обновляем счетчик каждую минуту (чтобы учитывать, если текущая дата стала выходным или рабочим)
+        updateCountdown(); // Первое обновление сразу
+        setInterval(updateCountdown, 1000 * 60); // Обновление каждую минуту
+    </script>
+
+</body>
+</html>
+
