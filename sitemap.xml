@@ -2,14 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://viraxis.hopto.org/main.html</loc>
-        <lastmod>2025-11-24T19:41:08+03:00</lastmod>
+        <lastmod>2025-11-28T23:38:54+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/uk/main.html</loc>
+        <lastmod>2025-11-28T23:38:54+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/en/main.html</loc>
+        <lastmod>2025-11-28T23:38:54+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/uk/index.html</loc>
+        <lastmod>2025-11-28T23:38:54+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/en/index.html</loc>
+        <lastmod>2025-11-28T23:38:54+03:00</lastmod>
     </url>
     <url>
         <loc>https://viraxis.hopto.org/index.html</loc>
-        <lastmod>2025-11-24T19:41:08+03:00</lastmod>
+        <lastmod>2025-11-28T23:38:54+03:00</lastmod>
     </url>
     <url>
         <loc>https://viraxis.hopto.org/proj.html</loc>
-        <lastmod>2025-11-24T19:40:44+03:00</lastmod>
+        <lastmod>2025-11-28T23:32:08+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/uk/proj.html</loc>
+        <lastmod>2025-11-28T23:32:08+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/en/proj.html</loc>
+        <lastmod>2025-11-28T23:32:08+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/technical/404.html</loc>
+        <lastmod>2025-11-28T22:49:47+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/uk/technical/404.html</loc>
+        <lastmod>2025-11-28T22:49:47+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/en/technical/404.html</loc>
+        <lastmod>2025-11-28T22:49:47+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/technical/503.html</loc>
+        <lastmod>2025-11-28T22:54:57+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/uk/technical/503.html</loc>
+        <lastmod>2025-11-28T22:54:57+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/en/technical/503.html</loc>
+        <lastmod>2025-11-28T22:54:57+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/blog/uk/обновление-вебсайта.html</loc>
+        <lastmod>2025-11-28T23:17:12+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/blog/en/обновление-вебсайта.html</loc>
+        <lastmod>2025-11-28T23:17:12+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/blog/обновление-вебсайта.html</loc>
+        <lastmod>2025-11-28T23:17:12+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/blog/uk/blog.html</loc>
+        <lastmod>2025-11-28T23:39:33+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/blog/en/blog.html</loc>
+        <lastmod>2025-11-28T23:39:33+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://viraxis.hopto.org/blog/blog.html</loc>
+        <lastmod>2025-11-28T23:39:33+03:00</lastmod>
     </url>
 </urlset>
